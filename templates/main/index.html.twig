@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}List of the dates{% endblock %}
+
+{% block body %}
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Date</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for data in list %}
+        <tr>
+            <th scope="row">{{ data.id }}</th>
+            <td>{{ data.Nom }}</td>
+            <td>{{ data.Prenom }}</td>
+            <td>{{ data.Date|date('Y-m-d') }}</td>
+            <td></td>
+        </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
