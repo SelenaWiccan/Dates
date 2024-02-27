@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use App\Entity\Crud;
 use App\Form\CrudType;
+use App\Entity\User;
+use App\Form\UserType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
@@ -172,8 +174,8 @@ class MainController extends AbstractController
      */
     public function account(Request $request): Response
     {
-        $crud = new Crud();
-        $form = $this->createForm(CrudType::class, $crud);
+        $crud = new User();
+        $form = $this->createForm(UserType::class, $crud);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
