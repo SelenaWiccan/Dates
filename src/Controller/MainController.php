@@ -154,7 +154,7 @@ class MainController extends AbstractController
             return $this->redirectToRoute('list'); // Corrected redirect
         }
 
-        return $this->render('main/login.html.twig', [
+        return $this->render('security/login.html.twig', [
             'form' => $form->createView()
         ]);
     }

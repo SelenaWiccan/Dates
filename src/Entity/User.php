@@ -4,11 +4,12 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  */
-class User
+class User implements UserInterface
 {
     /**
      * @ORM\Id
@@ -88,5 +89,34 @@ class User
         $this->mail = $mail;
 
         return $this;
+    }
+
+    // Implémentation des méthodes de l'interface UserInterface
+
+    public function getUsername(): string
+    {
+        return (string) $this->mail;
+    }
+
+    public function getPassword(): string
+    {
+        return (string) $this->mdp;
+    }
+
+    public function getRoles(): array
+    {
+        // Vous pouvez implémenter la logique de rôles ici si nécessaire
+        return ['ROLE_USER'];
+    }
+
+    public function getSalt(): ?string
+    {
+        // Vous n'avez pas besoin d'un sel avec l'algorithme bcrypt
+        return null;
+    }
+
+    public function eraseCredentials()
+    {
+        // Si vous stockez des informations sensibles dans l'utilisateur, effacez-les ici
     }
 }
