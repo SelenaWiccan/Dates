@@ -71,6 +71,22 @@ class MainController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/delete/{id}", name="delete")
+     */
+    public function delete(Request $request, $id): Response
+    {
+        // Logique de suppression
+        $data = $this->getDoctrine()->getRepository(Crud::class)->find($id);
+            $em = $this->getDoctrine()->getManager();
+            $em->remove($data);
+            $em->flush();
+
+            $this->addFlash('notice', 'Deleted Successfully');
+
+            return $this->redirectToRoute('main'); // Corrected redirect
+    }
+
 //    /**
 //     * @Route("/delete/{id}", name="delete")
 //     */

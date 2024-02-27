@@ -27,7 +27,18 @@
                      <a class="btn btn-warning" href="{{ path('update', {'id': data.id }) }}"> Update </a>
                     </td>
                     <td>
-                        <a class="btn btn-danger" > Delete </a>
+                        <a class="btn btn-danger" onclick="showConfirmationPopup({{ data.id }})">Delete</a>
+                        <script>
+                            function showConfirmationPopup(id) {
+                                // Afficher la popup ici
+                                if (confirm("Are you sure you want to delete?")) {
+                                    window.location.href = "{{ path('delete', {'id': '__id__' }) }}".replace('__id__', id);
+                                } else {
+                                    // Annuler la suppression
+                                    return false;
+                                }
+                            }
+                        </script>
                     </td>
                 </tr>
             {% endfor %}
@@ -36,4 +47,6 @@
             </tbody>
         </table>
     </div>
+
+
 {% endblock %}
