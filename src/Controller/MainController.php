@@ -114,10 +114,22 @@ class MainController extends AbstractController
      */
     public function list(): Response
     {
-        // Fetch data from the database
-        $data = $this->getDoctrine()->getRepository(Crud::class)->findAll();
+        // Déterminer la date d'aujourd'hui
+        $today = new \DateTime();
 
-// Pass the data to the template
+        // Déterminer la date dans 30 jours
+        $thirtyDaysLater = (new \DateTime())->modify('+30 days');
+
+        // Récupérer les données de la base de données
+        $repository = $this->getDoctrine()->getRepository(Crud::class);
+        $data = $repository->createQueryBuilder('c')
+            ->where('c.Date BETWEEN :today AND :thirtyDaysLater')
+            ->setParameter('today', $today)
+            ->setParameter('thirtyDaysLater', $thirtyDaysLater)
+            ->getQuery()
+            ->getResult();
+
+        // Passer les données au modèle
         return $this->render('main/list.html.twig', [
             'list' => $data,
         ]);
