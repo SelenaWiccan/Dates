@@ -19,12 +19,16 @@ Pour le fonctionnement de l'application, il est nécessaire de rentrer tout les 
 Pour le fonctionnement de la page "Welcome" à l'adresse : http://127.0.0.1:8001/welcome est composée de
 - 1 bouton "Connect" : Le bouton qui doit servir à ramener vers la page de login (la page de login ne fonctionne pas) -> ramène vers la page "/security/list"
 - 1 bouton "Page login en panne" : Le bouton qui doit servir à ramener quand même passer à la page suivante mais en esquivant l'authentification -> ramène vers la page "/main/list"
-- le bouton "Create an account" : Le bouton qui doit servir à ramener vers la page de création de compte -> ramène vers la page "/main/account"
+- 1 bouton "Create an account" : Le bouton qui doit servir à ramener vers la page de création de compte -> ramène vers la page "/main/account"
+
  *************************************************************************************************************************************************
-#    # Page Login
+#    # Page Login // ne fonctionne pas (pas vraiment de rendu vérifié)
  
-- à chaque validation du formulaire il est possible de voir ce qui a été ajouté dans le tableau dans une ligne qui récapitule les données enregistrées
-- Tout les champs du formulaire doivent être validé sinon la réservation ne sera pas validé et donc non inscrite dans le tableau (seule option supprimer le formulaire et recommencer
+-Pour le fonctionnement de la page "Welcome" à l'adresse : http://127.0.0.1:8001/login est composée de
+- 1 bouton "Connect" : Le bouton qui doit servir à ramener vers la page de login (la page de login ne fonctionne pas) -> ramène vers la page "/security/list"
+- 1 bouton "Page login en panne" : Le bouton qui doit servir à ramener quand même passer à la page suivante mais en esquivant l'authentification -> ramène vers la page "/main/list"
+- 1 bouton "Create an account" : Le bouton qui doit servir à ramener vers la page de création de compte -> ramène vers la page "/main/account"
+
 ********************************************************************************************************************
 #    # Page account
 - les champs (nom , prenom, date, email, nombre de place et telephone) sont des champs requis pour le formulaire { message d'erreur " veuuillez completer ce champ" }
