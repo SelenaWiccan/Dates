@@ -98,7 +98,7 @@ Pour le fonctionnement de la page "account" à l'adresse : http://127.0.0.1:8000
 
 L'authentification :
 
-- error does not exists
+- error does not exists -> peut être la commmunication entre le controller et twig car si "error" est commenté la ligne du dessous n'est pas trouvé non plus
 
 ******************************************************
 
