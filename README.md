@@ -6,6 +6,10 @@ L'application de gestion des dates d'anniversaires est une application qui perme
 - Crud : la table crud permet l'enregistrement des dates ainsi que le nom et prénom de la personne concernée
 - User : la table user permet l'enregistrement de nouveaux utilisateurs dans l'application et servira donc pour l'authentification
 
+ Langage utilisé :
+- Symfony
+- Twig
+
 # Fonctionnement
 
 Pour le fonctionnement de l'application, il est nécessaire de rentrer tout les champs du formulaire dans la page sinon le formulaire ne se validera pas, chaques dates sera affichée dans un tableau avec la possibilité de 
