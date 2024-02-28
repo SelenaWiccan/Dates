@@ -50,6 +50,8 @@ Le formulaire ne peux être validé si tout les champs ne sont pas complétés
 ******************************************************************************************
 #    # Page List
 
+Pour le fonctionnement de la page "account" à l'adresse : http://127.0.0.1:8001/list est composée de :
+
 - 1 tableau affichant les dates qui sont prévues dans les 30 jours à venir
 - 1 bouton "show" -> ramène vers la page "/main/main"
 - 1 bouton "logout -> ramène vers la page "/main/welcome" qui sert à la déconnexion (après avoir réparé la page login)
@@ -57,29 +59,68 @@ Le formulaire ne peux être validé si tout les champs ne sont pas complétés
 ********************************************************************************************************************
 #    # Page main
 
+Pour le fonctionnement de la page "account" à l'adresse : http://127.0.0.1:8001/main est composée de :
+
 - 1 tableau affichant toutes les dates enregistrés dans la base de donnée
 - 1 bouton "update" -> ramène vers la page "/main/update"
 - 1 bouton "delete" -> ouvre un modal pour confirmer que l'on va supprimer la donnée "oui" ou "non"
-- 1 bouton "ajouter" -> ramène vers la page "/main/new" 
+- 1 bouton "ajouter" -> ramène vers la page "/main/create" 
 - 1 bouton "logout" -> ramène vers la page "/main/welcome" en ne faisant rien
 - 1 bouton "back to list" -> ramène vers la page "/main/list" en ne faisant rien
 
 ********************************************************************************************************************
 #    # Page update
 
-- 1 tableau affichant toutes les dates enregistrés dans la base de donnée
-- 1 bouton "update" -> ramène vers la page "/main/update"
-- 1 bouton "delete" -> ouvre un modal pour confirmer que l'on va supprimer la donnée "oui" ou "non"
-- 1 bouton "ajouter" -> ramène vers la page "/main/new" 
-- 1 bouton "logout" -> ramène vers la page "/main/welcome" en ne faisant rien
-- 1 bouton "back to list" -> ramène vers la page "/main/list" en ne faisant rien 
+Pour le fonctionnement de la page "account" à l'adresse : http://127.0.0.1:8001/update est composée de :
+
+- 1 champ nom
+- 1 champ prenom
+- 1 champ date
+- 1 bouton "create" -> ramène vers la page "/main/main" -> en ayant inséré la date dans la base de donnée
+- 1 bouton "logout" -> ramène vers la page "/main/welcome" en ne faisant rien -> déconnexion
+- 1 bouton "back to list" -> ramène vers la page "/main/main" en ne faisant rien
+
+********************************************************************************************************************
+#    # Page update
+
+Pour le fonctionnement de la page "account" à l'adresse : http://127.0.0.1:8001/update est composée de :
+
+- 1 champ nom
+- 1 champ prenom
+- 1 champ date
+- 1 bouton "ajouter" -> ramène vers la page "/main/main" -> en ayant mit à jour la date dans la base de donnée
+- 1 bouton "logout" -> ramène vers la page "/main/welcome" en ne faisant rien -> déconnexion
+- 1 bouton "back to list" -> ramène vers la page "/main/main" en ne faisant rien
+
+********************************************************************************************************************
+#    # Page create
+
+Pour le fonctionnement de la page "account" à l'adresse : http://127.0.0.1:8000/create est composée de :
+
+- 1 champ nom
+- 1 champ prenom
+- 1 champ date
+- 1 bouton "ajouter" -> ramène vers la page "/main/main" -> en ayant inséré la date dans la base de donnée
+- 1 bouton "logout" -> ramène vers la page "/main/welcome" en ne faisant rien -> déconnexion
+- 1 bouton "back to list" -> ramène vers la page "/main/main" en ne faisant rien
+
+**********************************************************************
 
 # CE QUI NE MARCHE PAS
-**********************************************************************
-- Bloquer le champs de formulaire pour ne pas que l'utilisateur puisse mettre à jour les données : solution, faire disparaitre le bouton valider
+
+L'authentification :
+
+- error does not exists
+
 ******************************************************
 
 # DIFFICULTES :
+
+- Git
+- Authentification
+- css
+- un peu base de donnée
+
 ******************************************
 
 
