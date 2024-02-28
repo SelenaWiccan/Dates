@@ -10,7 +10,9 @@ L'application de gestion des dates d'anniversaires est une application qui perme
 - Symfony
 - Twig
 
-# FONCTIONNEMENT
+Fixtures
+
+# FONCTIONNEMENT INTERFACE
 
 Pour le fonctionnement de l'application, il est nécessaire de rentrer tout les champs du formulaire dans la page sinon le formulaire ne se validera pas, chaques dates sera affichée dans un tableau avec la possibilité de 
 
