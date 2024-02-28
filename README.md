@@ -4,6 +4,7 @@ L'application de gestion des dates d'anniversaires est une application qui perme
 1 Bases de données (crud) avec 2 tables :
 - Crud : la table crud permet l'enregistrement des dates ainsi que le nom et prénom de la personne concernée
 - User : la table user permet l'enregistrement de nouveaux utilisateurs dans l'application et servira donc pour l'authentification
+
 Pour le fonctionnement de l'application, il est nécessaire de rentrer tout les champs du formulaire avec des données valide ou le texte du tableau risque de ne pas s'afficher ou de planter l'application. Le bouton effacer sert à effacer toutes les données (mais ne supprime pas dans le tableau) le bouton "Valider" sert à valider le formulaire il peut également mettre à jour les informations correspondantes. Le bouton Supprimmer supprime la réservation qui correspond. Aucune date précise pour le moment
 ************************************************************************************************
 _CE QUI FONCTIONNE:_
