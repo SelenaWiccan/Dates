@@ -16,15 +16,12 @@ Pour le fonctionnement de l'application, il est nécessaire de rentrer tout les 
 
 #    # Page Welcome
 
-
-
-- le bouton "Réserver une nouvelle place" : sert à afficher un formulaire apparait et disparait.
-- le bouton "valider" : sert à valider le formulaire, afficher le bouton pour ajouter un nouveau formulaire et afficher les données dans un tableau. Il fait également disparaitre les boutons "effacer" et "valider".
-- le bouton "suprimer" : sert à supprimer les données dans le tableau (+ texte) et supprime la zone du formulaire et réaffiche le bouton "Réserver une nouvelle place" si aucun formularaire n'est présent visuellement.
-- le bouton "effacer" : sert à effacer les donner du formulaire avant la validation.
-- le bouton "+ 1 place" : sert à ajouter des champs de formulaire à volonté. Cepandant il disparait quand on clique dessus pour éviter de créer trop de formulaire à la fois et il réapparait lorsque le bouton valider est appuyé
+Pour le fonctionnement de la page "Welcome" à l'adresse : http://127.0.0.1:8001/welcome est composée de
+- 1 bouton "Connect" : Le bouton qui doit servir à ramener vers la page de login (la page de login ne fonctionne pas) -> ramène vers la page "/security/list"
+- 1 bouton "Page login en panne" : Le bouton qui doit servir à ramener quand même passer à la page suivante mais en esquivant l'authentification -> ramène vers la page "/main/list"
+- le bouton "Create an account" : Le bouton qui doit servir à ramener vers la page de création de compte -> ramène vers la page "/main/account"
  *************************************************************************************************************************************************
- #Page login
+#    # Page Welcome
  
 - à chaque validation du formulaire il est possible de voir ce qui a été ajouté dans le tableau dans une ligne qui récapitule les données enregistrées
 - Tout les champs du formulaire doivent être validé sinon la réservation ne sera pas validé et donc non inscrite dans le tableau (seule option supprimer le formulaire et recommencer
