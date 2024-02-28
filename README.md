@@ -21,17 +21,19 @@ Pour le fonctionnement de la page "Welcome" à l'adresse : http://127.0.0.1:8001
 - 1 bouton "Page login en panne" : Le bouton qui doit servir à ramener quand même passer à la page suivante mais en esquivant l'authentification -> ramène vers la page "/main/list"
 - le bouton "Create an account" : Le bouton qui doit servir à ramener vers la page de création de compte -> ramène vers la page "/main/account"
  *************************************************************************************************************************************************
-#    # Page Welcome
+#    # Page Login
  
 - à chaque validation du formulaire il est possible de voir ce qui a été ajouté dans le tableau dans une ligne qui récapitule les données enregistrées
 - Tout les champs du formulaire doivent être validé sinon la réservation ne sera pas validé et donc non inscrite dans le tableau (seule option supprimer le formulaire et recommencer
 ********************************************************************************************************************
+#    # Page account
 - les champs (nom , prenom, date, email, nombre de place et telephone) sont des champs requis pour le formulaire { message d'erreur " veuuillez completer ce champ" }
 - le champ email demande une email valide donc avec un @
 - le champs du nombre de place est requis { "veuillez entrer un nombre" }
 - seul 1 bouton est visible au début du code.
 - Le formulaire semble ne pas se valider et renvoie une erreur si aucune date n'est selectionnée
 ******************************************************************************************
+#    # Page List
 
 _CE ne FONCTIONNE pas:_
 **********************************************************************
