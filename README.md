@@ -28,7 +28,7 @@ Pour le fonctionnement de la page "login" à l'adresse : http://127.0.0.1:8001/l
 
 - 1 champ mot de passe
 - 1 champ adresse mail
-- 1 bouton de validation -> ramène vers la page "/main/list" en ayant connecté l'utilisateur qui faisait la demande
+- 1 bouton de validation -> ramène vers la page "/main/list" en ayant connecté l'utilisateur qui faisait la demande après vérifications que les données sont correctes et que l'utilisateur existe
 - 1 bouton d'annulation -> ramène vers la page "/main/welcome" en ne faisant rien 
 
 Le formulaire ne peux être validé si tout les champs ne sont pas complétés
@@ -55,28 +55,32 @@ Le formulaire ne peux être validé si tout les champs ne sont pas complétés
 - 1 bouton "logout -> ramène vers la page "/main/welcome" qui sert à la déconnexion (après avoir réparé la page login)
 
 ********************************************************************************************************************
-#    # Page account
+#    # Page main
 
-- 1 champ nom
-- 1 champ prenom
-- 1 champ mot de passe
-- 1 champ adresse mail
-- 1 bouton de validation -> ramène vers la page "/main/welcome" en ayant créé un nouveau compte dans la base de donnée
-- 1 bouton d'annulation -> ramène vers la page "/main/welcome" en ne faisant rien 
-- Le formulaire ne peux être validé si tout les champs ne sont pas complétés
+- 1 tableau affichant toutes les dates enregistrés dans la base de donnée
+- 1 bouton "update" -> ramène vers la page "/main/update"
+- 1 bouton "delete" -> ouvre un modal pour confirmer que l'on va supprimer la donnée "oui" ou "non"
+- 1 bouton "ajouter" -> ramène vers la page "/main/new" 
+- 1 bouton "logout" -> ramène vers la page "/main/welcome" en ne faisant rien
+- 1 bouton "back to list" -> ramène vers la page "/main/list" en ne faisant rien
 
-_CE ne FONCTIONNE pas:_
+********************************************************************************************************************
+#    # Page update
+
+- 1 tableau affichant toutes les dates enregistrés dans la base de donnée
+- 1 bouton "update" -> ramène vers la page "/main/update"
+- 1 bouton "delete" -> ouvre un modal pour confirmer que l'on va supprimer la donnée "oui" ou "non"
+- 1 bouton "ajouter" -> ramène vers la page "/main/new" 
+- 1 bouton "logout" -> ramène vers la page "/main/welcome" en ne faisant rien
+- 1 bouton "back to list" -> ramène vers la page "/main/list" en ne faisant rien 
+
+# CE QUI NE MARCHE PAS
 **********************************************************************
 - Bloquer le champs de formulaire pour ne pas que l'utilisateur puisse mettre à jour les données : solution, faire disparaitre le bouton valider
 ******************************************************
 
-DIFFICULTES :
+# DIFFICULTES :
 ******************************************
-Les choses qui me sont difficiles sont les nouvelles notions et les faire fonctionner cela prends beaucoup de temps. Quelques points ne fonctionnent toujours pas dans le code comme listé ci-dessus. Il y a des modifications à faire..
-*****************************
 
-QUESTIONS : 
-******************
- ?
- *****
+
 
