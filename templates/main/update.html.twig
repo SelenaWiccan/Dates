@@ -1,7 +1,32 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        body {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/010/081/678/non_2x/abstract-gradient-green-light-background-free-vector.jpg');
+            background-size: 100% auto; /* Étire l'image en hauteur */
+            background-position: center;
+            /* Ajoutez d'autres propriétés CSS si nécessaire */
+            .logo {
+                position: absolute;
+                top: 20px; /* Ajustez la position verticale du logo */
+                left: 20px; /* Ajustez la position horizontale du logo */
+                width: 100px; /* Ajustez la largeur du logo selon vos besoins */
+                height: auto; /* Maintient le ratio d'aspect */
+            }
+            .logout-btn {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+{% endblock %}
 
+{% block body %}
+    <img src="https://www.creativefabrica.com/wp-content/uploads/2022/09/25/Head-Wolf-Logo-Design-Inspiration-Graphics-39255511-2-580x387.jpg" alt="Logo" class="logo"><br>
+    <a class="btn btn-danger mt-2 text-white logout-btn" href="{{ path('welcome') }}">log out</a>
     <div class="container">
         <div class="row">
             <h3 class="mt-5 mb-5">Update Form</h3>
@@ -27,7 +52,7 @@
             <div class="form-group">
                 <button class="btn btn-info mt-2 text-white">Update</button>
                 <a class="btn btn-danger mt-2 text-white" href="{{ path('main') }}">Back to list</a>
-                <a class="btn btn-danger mt-2 text-white" href="{{ path('welcome') }}">log out</a>
+
             </div>
             {{ form_end(form) }}
         </div>

@@ -1,7 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        body {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/010/081/678/non_2x/abstract-gradient-green-light-background-free-vector.jpg');
+            background-size: 100% auto; /* Étire l'image en hauteur */
+            background-position: center;
+            /* Ajoutez d'autres propriétés CSS si nécessaire */
+        }
+    </style>
+{% endblock %}
 
+{% block body %}
+    <img src="https://www.creativefabrica.com/wp-content/uploads/2022/09/25/Head-Wolf-Logo-Design-Inspiration-Graphics-39255511-2-580x387.jpg" alt="Logo" class="logo"><br>
     <div class="container">
         <div class="row">
             <h3 class="mt-5 mb-5">Create User</h3>
