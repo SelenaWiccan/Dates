@@ -11,9 +11,12 @@ L'application de gestion des dates d'anniversaires est une application qui perme
 - Twig
 
 # Fonctionnement
-#Page Welcome
 
 Pour le fonctionnement de l'application, il est nécessaire de rentrer tout les champs du formulaire dans la page sinon le formulaire ne se validera pas, chaques dates sera affichée dans un tableau avec la possibilité de 
+
+# Page Welcome
+
+
 
 - le bouton "Réserver une nouvelle place" : sert à afficher un formulaire apparait et disparait.
 - le bouton "valider" : sert à valider le formulaire, afficher le bouton pour ajouter un nouveau formulaire et afficher les données dans un tableau. Il fait également disparaitre les boutons "effacer" et "valider".
@@ -21,6 +24,8 @@ Pour le fonctionnement de l'application, il est nécessaire de rentrer tout les 
 - le bouton "effacer" : sert à effacer les donner du formulaire avant la validation.
 - le bouton "+ 1 place" : sert à ajouter des champs de formulaire à volonté. Cepandant il disparait quand on clique dessus pour éviter de créer trop de formulaire à la fois et il réapparait lorsque le bouton valider est appuyé
  *************************************************************************************************************************************************
+ #Page login
+ 
 - à chaque validation du formulaire il est possible de voir ce qui a été ajouté dans le tableau dans une ligne qui récapitule les données enregistrées
 - Tout les champs du formulaire doivent être validé sinon la réservation ne sera pas validé et donc non inscrite dans le tableau (seule option supprimer le formulaire et recommencer
 ********************************************************************************************************************
