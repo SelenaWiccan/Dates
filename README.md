@@ -1,5 +1,5 @@
 ﻿# Application de gestion des dates d'anniversaires
-# Introduction
+# INTRODUCTION
 L'application de gestion des dates d'anniversaires est une application qui permet à l'utilisateur de s'authentifier et enregistrer ses dates d'anniversaire pour s'en rappeler ! L'application est composée de :
 
  1 Bases de données (crud) avec 2 tables :
@@ -10,7 +10,7 @@ L'application de gestion des dates d'anniversaires est une application qui perme
 - Symfony
 - Twig
 
-# Fonctionnement
+# FONCTIONNEMENT
 
 Pour le fonctionnement de l'application, il est nécessaire de rentrer tout les champs du formulaire dans la page sinon le formulaire ne se validera pas, chaques dates sera affichée dans un tableau avec la possibilité de 
 
