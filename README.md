@@ -1,5 +1,4 @@
 ﻿# Application de gestion des dates d'anniversaires
-#Application
 # Introduction
 L'application de gestion des dates d'anniversaires est une application qui permet à l'utilisateur de s'authentifier et enregistrer ses dates d'anniversaire pour s'en rappeler ! L'application est composée de :
 1 Bases de données (crud) avec 2 tables :
